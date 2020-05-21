@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/water1"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+        android:text="Date"
+            android:background="@drawable/bg3_round_button"
+        android:id="@+id/dateButton"
+        /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateText"
+        />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="姓名："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editText_Name"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="必填"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="BMI："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editText_Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="血壓："
+                android:layout_marginLeft="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editText_Hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginRight="5dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:text="血糖："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editText_else"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:layout_marginRight="5dp"
+                android:inputType="textPersonName"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="67dp">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="125dp"
+                android:layout_height="54dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="213dp"
+                android:layout_weight="1"
+                android:text="往右滑刪除"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="?android:attr/colorActivatedHighlight"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/button_Create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg4_round_button"
+                android:text="新增" />
+
+            <Button
+                android:id="@+id/button_Modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg4_round_button"
+                android:text="修改" />
+
+            <Button
+                android:id="@+id/button_Clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg4_round_button"
+                android:text="清空顯示" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="393dp"
+            android:layout_height="228dp" />
+
+        <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"></LinearLayout>
+    </LinearLayout>
+</ScrollView>

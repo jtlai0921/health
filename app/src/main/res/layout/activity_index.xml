@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water1">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="320dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#1845B9B7"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:firstDayOfWeek="1"
+        android:focusedMonthDateColor="#AB4F6CBC"
+        android:hapticFeedbackEnabled="true"
+        android:scrollbarSize="10dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbHorizontal="@drawable/bg_round_button"
+        android:scrollbarTrackVertical="@drawable/blood48"
+        android:selectedDateVerticalBar="@color/colorPrimary"
+        android:selectedWeekBackgroundColor="#000000"
+        android:showWeekNumber="true"
+        android:shownWeekCount="4"
+        android:textAlignment="center"
+        android:textDirection="ltr"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:unfocusedMonthDateColor="#490F0F"
+        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:weekNumberColor="#D64F4F"
+        android:weekSeparatorLineColor="#B53333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+
+        <Button
+            android:id="@+id/bmiButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg3_round_button"
+            android:drawableBottom="@drawable/weight64"
+            android:onClick="bmi"
+            android:text="檢測BMI"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/pressureButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg3_round_button"
+            android:drawableBottom="@drawable/healthmedical64"
+            android:onClick="pressure"
+            android:text="檢測血壓"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/sugerButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg3_round_button"
+            android:drawableBottom="@drawable/shapes64"
+            android:onClick="suger"
+            android:text="檢測血糖"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="檢測BMI"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="檢測血壓"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/textview2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+    <TextView
+        android:id="@+id/textview8"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="檢測血糖"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview2">
+
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg3_round_button"
+            android:drawableBottom="@drawable/cloudy64"
+            android:onClick="record"
+            android:text="紀錄"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/graphButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg3_round_button"
+            android:drawableBottom="@drawable/chart641"
+            android:onClick="graph"
+            android:text="圖表"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/authorButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg3_round_button"
+            android:drawableBottom="@drawable/communications64"
+            android:onClick="author"
+            android:text=""
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="紀錄"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="圖表"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/textview4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="作者"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview5">
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

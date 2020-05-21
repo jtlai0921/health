@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="tv_message" type="id" />
+    <item name="cancel" type="id" />
+    <item name="my_image_view" type="id" />
 </resources>
