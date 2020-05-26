@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/sky0520"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/water1">
+    android:layout_height="match_parent">
 
     <CalendarView
         android:id="@+id/calendarView"
@@ -13,7 +13,7 @@
         android:layout_height="290dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:background="#1845B9B7"
+        android:background="#4596CCEC"
         android:dateTextAppearance="@style/TextAppearance.AppCompat.Large"
         android:firstDayOfWeek="1"
         android:focusedMonthDateColor="#AB4F6CBC"
@@ -54,42 +54,41 @@
 
         <Button
             android:id="@+id/bmiButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:background="@drawable/bg3_round_button"
-            android:drawableBottom="@drawable/weight64"
-            android:onClick="bmi"
-            android:text="檢測BMI"
-            android:textColor="@android:color/white" />
+            android:drawableBottom="@drawable/weight50"
+            android:paddingBottom="10dp"
+            android:onClick="bmi" />
 
         <Button
             android:id="@+id/pressureButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:background="@drawable/bg3_round_button"
-            android:drawableBottom="@drawable/healthmedical64"
+            android:drawableBottom="@drawable/healthmedical642"
+            android:paddingBottom="10dp"
             android:onClick="pressure"
-            android:text="檢測血壓"
-            android:textColor="@android:color/white" />
+             />
 
         <Button
             android:id="@+id/sugerButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:background="@drawable/bg3_round_button"
             android:drawableBottom="@drawable/shapes64"
+            android:paddingBottom="5dp"
             android:onClick="suger"
-            android:text="檢測血糖"
-            android:textColor="@android:color/white" />
+             />
 
 
     </LinearLayout>
@@ -99,7 +98,7 @@
         android:id="@+id/textview2"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="2dp"
         android:gravity="center"
         android:text="檢測BMI"
@@ -112,7 +111,7 @@
         android:id="@+id/textview3"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="2dp"
         android:gravity="center"
         android:text="檢測血壓"
@@ -126,7 +125,7 @@
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="17dp"
         android:gravity="center"
         android:text="檢測血糖"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -150,42 +149,42 @@
 
         <Button
             android:id="@+id/recordButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:background="@drawable/bg3_round_button"
             android:drawableBottom="@drawable/cloudy64"
+            android:paddingBottom="10dp"
             android:onClick="record"
-            android:text="紀錄"
-            android:textColor="@android:color/white" />
+             />
 
         <Button
             android:id="@+id/graphButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:background="@drawable/bg3_round_button"
-            android:drawableBottom="@drawable/chart641"
-            android:onClick="graph"
-            android:text="圖表"
-            android:textColor="@android:color/white" />
+            android:drawableLeft="@drawable/chart642"
+            android:paddingLeft="10dp"
+            android:drawingCacheQuality="auto"
+            android:onClick="graph" />
 
         <Button
             android:id="@+id/authorButton"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:background="@drawable/bg3_round_button"
-            android:drawableBottom="@drawable/communications64"
+            android:drawableBottom="@drawable/communications642"
+            android:paddingBottom="10dp"
             android:onClick="author"
-            android:text=""
-            android:textColor="@android:color/white" />
+             />
 
 
     </LinearLayout>
@@ -195,10 +194,10 @@
         android:id="@+id/textview4"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="2dp"
         android:gravity="center"
-        android:text="紀錄"
+        android:text="紀錄資料"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -209,10 +208,10 @@
         android:id="@+id/textview5"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="2dp"
         android:gravity="center"
-        android:text="圖表"
+        android:text="圖表資料"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="18dp"
         app:layout_constraintStart_toEndOf="@+id/textview4"
@@ -223,9 +222,9 @@
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="17dp"
         android:gravity="center"
-        android:text="作者"
+        android:text="聯絡我們"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -243,6 +242,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview5">
+
+
 
 
     </LinearLayout>

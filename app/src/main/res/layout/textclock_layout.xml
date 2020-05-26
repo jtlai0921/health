@@ -4,15 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     <TextClock
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:format24Hour="yyyy年MM月dd EE\naa HH:mm:ss"
-        android:format12Hour="yyyy年MM月dd EE\naa hh:mm:ss"
-        android:textStyle="normal"
-        android:fontFamily="sans-serif-light"
-        android:textSize="26sp"
-        tools:targetApi="jelly_bean_mr1"/>
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:format24Hour="yyyy年MM月dd EE\naa HH:mm:ss"
+    android:format12Hour="yyyy年MM月dd EE\naa hh:mm:ss"
+    android:textStyle="normal"
+    android:fontFamily="sans-serif-light"
+    android:textSize="26sp"
+    tools:targetApi="jelly_bean_mr1"/>
 </RelativeLayout>

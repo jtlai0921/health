@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/water"
+    android:background="@drawable/bluesky0520"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,21 +10,22 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/t1"
-                android:layout_width="150dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
                 android:text="血壓檢測"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="?android:attr/colorActivatedHighlight"
-                android:textSize="30dp"
-                />
+                android:textSize="30dp" />
+
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
@@ -89,16 +90,13 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginLeft="200dp">
+            android:layout_marginLeft="220dp">
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/bg4_round_button"
                 android:text="Send"
                 android:textColor="@android:color/white"
@@ -107,9 +105,9 @@
             <Button
                 android:id="@+id/indexButton"
                 android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
                 android:background="@drawable/bg4_round_button"
-
                 android:onClick="index"
                 android:text="Home"
                 android:textColor="@android:color/white"
@@ -156,6 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:baselineAligned="false"
                 android:fontFamily="sans-serif-light"

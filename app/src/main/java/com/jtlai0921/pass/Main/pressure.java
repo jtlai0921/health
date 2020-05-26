@@ -48,13 +48,13 @@ public class pressure extends AppCompatActivity {
 
                     // 診斷結果 顯示
                     if (fp<120 && fd<80)
-                        dia.setText("血壓正常");
+                        dia.setText("經過電腦分析判斷\n您的血壓正常");
                     else if (129<fp && fp<139||fp<89 && 80<fp )
-                        dia.setText("高血壓前期(警示用)");
+                        dia.setText("經過電腦分析判斷您\n為高血壓前期(警示用)");
                     else if (140<fp && fp<159||fp<99 && 90<fp)
-                        dia.setText("第一期高血壓");
+                        dia.setText("經過電腦分析判斷\n您為第一期高血壓");
                     else if (160<fp || 100<fp)
-                        dia.setText("第2期高血壓");
+                        dia.setText("經過電腦分析判斷\n您為第2期高血壓");
                     else dia.setText("請輸入正確值");
                 }
             }

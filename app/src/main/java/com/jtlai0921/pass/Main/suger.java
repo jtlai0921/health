@@ -60,13 +60,13 @@ public class suger extends AppCompatActivity {
 
                     // 診斷結果 顯示
                     if (fresult<80)
-                        dia.setText("血糖太低");
+                        dia.setText("經過血糖指數判斷\n您的血糖太低");
                     else if (80 <= fresult && fresult< 110)
-                        dia.setText("正常");
+                        dia.setText("經過血糖指數判斷\n您為正常");
                     else if (130 <=fresult && fresult< 160)
-                        dia.setText("糖尿病可控制");
+                        dia.setText("經過血糖指數判斷\n您可能有糖尿病");
                     else if (fresult >= 160)
-                        dia.setText("嚴重糖尿病");
+                        dia.setText("經過血糖指數判斷\n您可能有嚴重糖尿病");
                 }
             }
 

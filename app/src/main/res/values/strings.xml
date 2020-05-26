@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">簡易檢測健康APP</string>
+    <string name="app_name">Health</string>
     <string-array name="english_week_string_array">
         <item>日</item>
         <item>一</item>

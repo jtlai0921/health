@@ -47,17 +47,17 @@ public class bmi extends AppCompatActivity {
 
                     // 診斷結果 顯示
                     if (fresult<18.5)
-                        dia.setText("體重過輕");
+                        dia.setText("經過BMI指數判斷\n您的體重過輕");
                     else if (18.5 <= fresult && fresult< 24)
-                        dia.setText("正常範圍");
+                        dia.setText("經過BMI指數判斷\n您的體重為正常範圍");
                     else if (24 <=fresult && fresult < 27)
-                        dia.setText("過    重");
+                        dia.setText("經過BMI指數判斷\n您的體重過重");
                     else if (27 <=fresult && fresult < 30)
-                        dia.setText("輕度肥胖");
+                        dia.setText("經過BMI指數判斷\n您的體重為輕度肥胖");
                     else if (30 <= fresult && fresult < 35)
-                        dia.setText("中度肥胖");
+                        dia.setText("經過BMI指數判斷\n您的體重為中度肥胖");
                     else if (fresult >= 35)
-                        dia.setText("重度肥胖        ");
+                        dia.setText("經過BMI指數判斷\n您的體重為重度肥胖        ");
                 }
             }
 
